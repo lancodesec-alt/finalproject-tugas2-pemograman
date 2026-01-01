@@ -7,11 +7,11 @@ CREATE TABLE mahasiswa (
 
 -- 2. Menambahkan 5 Record Mahasiswa
 INSERT INTO mahasiswa (NPM, Nama_Mahasiswa, Kelas) VALUES 
-('20234350013', 'Gilang Hadi', 'R5A'),
-('20234350001', 'Putra Pratama', 'R5B'),
-('20234350002', 'Maulana Malik', 'R5A'),
-('20234350003', 'Siti Aminah', 'R5C'),
-('20234350004', 'Budi Pamungkas', 'R5B');
+('202443500813', 'Gilang Akbar Hadisaputro', 'S3D'),
+('202343500013', 'Putra Pratama', 'S3D'),
+('202343500024', 'Maulana Malik', 'S3D'),
+('202343500031', 'Siti Aminah', 'S3D'),
+('202343500042', 'Budi Pamungkas', 'S3D');
 
 -- 3. Menampilkan Nama dan Kelas (Filter huruf 'p' atau 'm')
 SELECT Nama_Mahasiswa, Kelas 
@@ -56,4 +56,5 @@ CREATE TABLE penilaian (
     FOREIGN KEY (NPM) REFERENCES mahasiswa(NPM),
     FOREIGN KEY (Kode_Mata_Kuliah) REFERENCES mata_kuliah(Kode_Mata_Kuliah)
 );
+
 
